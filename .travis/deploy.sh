@@ -1,5 +1,5 @@
 #!/bin/sh
-curl --url 'https://api.esoui.com/addons/updatetest' \
+curl --url 'https://api.esoui.com/addons/update' \
   --header "x-api-token: ${ESOUI_API_KEY}" \
   --form id=$1 \
   --form version=$2 \
