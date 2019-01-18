@@ -1,16 +1,17 @@
 language: minimal
+
 before_deploy:
-- mkdir -p /tmp/addon/RunesVoice
-- cp -R . /tmp/addon/RunesVoice
-- rm -rf /tmp/addon/RunesVoice/.git /tmp/addon/RunesVoice/.travis /tmp/addon/RunesVoice/*.md
-- pushd /tmp/addon && zip -r /tmp/RunesVoice.zip RunesVoice && popd
+  - mkdir -p /tmp/addon/RunesVoice
+  - cp -R . /tmp/addon/RunesVoice
+  - rm -rf /tmp/addon/RunesVoice/.git /tmp/addon/RunesVoice/.travis /tmp/addon/RunesVoice/*.md
+  - pushd /tmp/addon && zip -r /tmp/RunesVoice.zip RunesVoice && popd
 addons:
   apt:
     packages:
     - zip
 deploy:
   - provider: script
-    script: sh .travis/deploy.sh 2173 $TRAVIS_TAG 4.1 /tmp/RunesVoice.zip
+    script: sh .travis/deploy.sh $TRAVIS_TAG 4.2 /tmp/RunesVoice.zip
     on:
       repo: Nols1000/RunesVoice
       tags: true
