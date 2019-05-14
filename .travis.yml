@@ -11,7 +11,7 @@ addons:
     - zip
 deploy:
   - provider: script
-    script: sh .travis/deploy.sh $TRAVIS_TAG 4.2 /tmp/RunesVoice.zip
+    script: sh .travis/deploy.sh 2173 $TRAVIS_TAG 4.2 /tmp/RunesVoice.zip
     on:
       repo: Nols1000/RunesVoice
       tags: true

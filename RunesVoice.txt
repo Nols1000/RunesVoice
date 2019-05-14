@@ -1,8 +1,8 @@
-## Title: RunesVoice
+﻿## Title: RunesVoice
 ## Description: Plays rune-sound as a rune is picked up.
 ## Author: Nils-Börge Margotti
-## Version: 0.1.0
-## APIVersion: 100025
+## Version: 0.1.1
+## APIVersion: 100026
 ## SavedVariables: RunesVoiceVariables
 ## OptionalDependsOn: LibStub LibAddonMenu-2.0
 

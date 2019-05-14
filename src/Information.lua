@@ -5,7 +5,7 @@ if RunesVoice == nil then RunesVoice = {} end
 -- Store Addon information to a table
 RunesVoice.Addon = {
   name = "RunesVoice",
-  version = "0.1.0",
+  version = "0.1.1",
   displayName = "RunesVoice",
   author = "Nils-Börge Margotti",
   email = "nilsmargotti@gmail.com",
